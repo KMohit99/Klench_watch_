@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:vibration/vibration.dart';
 
 import '../utils.dart';
 import '../utils/AssetUtils.dart';
@@ -45,6 +46,8 @@ class _KegelScreenState extends State<KegelScreen> with TickerProviderStateMixin
         setState(() {
           print("startstop Inside=$startStop");
           elapsedTime = transformMilliSeconds(watch.elapsedMilliseconds);
+          Vibration.vibrate();
+
           percent += 1;
           if (percent >= 100) {
             percent = 0.0;

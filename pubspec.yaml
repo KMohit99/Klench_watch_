@@ -45,6 +45,8 @@ dependencies:
   percent_indicator: ^4.0.1
   fluttertoast: ^8.0.8
   avatar_glow: ^2.0.2
+  dotted_border: ^2.0.0+2
+  vibration: ^1.7.4-nullsafety.0
 
 
 
